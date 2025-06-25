@@ -110,8 +110,22 @@ const Header = () => {
                             viewport={{ once: true }}
                             key={index}
                             className="cursor-pointer"
-                        >
-                            <Link
+                        >     
+                        <Link
+                       key={index}
+                       activeClass="active"
+                      to={nav.link}
+                   spy={true}
+             smooth={true}
+              duration={500}
+                         className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear"
+                   >
+                        <span className="heading-num text-primary mr-1 text-xs">
+                        0{index + 1}.
+                  </span>
+                   {nav.title}
+                 </Link>
+                            {/* <Link
                                 activeClass="active"
                                 to={nav.link}
                                 spy={true}
@@ -119,12 +133,12 @@ const Header = () => {
                                 duration={500}
                             >
                                <span className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear">
-    <span className="heading-num text-primary mr-1 text-xs">
-      0{index + 1}.
-    </span>
-    {nav.title}
-  </span>
-                            </Link>
+                               <span className="heading-num text-primary mr-1 text-xs">
+                                  0{index + 1}.
+                                </span>
+                                {nav.title}
+                               </span>
+                            </Link> */}
                         </motion.div>
                     ))}
                     <motion.div
