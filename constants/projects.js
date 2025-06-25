@@ -2,7 +2,7 @@ import project1 from "@/public/images/projects/project1.PNG";
 import project2 from "@/public/images/projects/project2.PNG";
 import project3 from "@/public/images/projects/project3.PNG";
 import project4 from "@/public/images/projects/project4.PNG";
-import project5 from "@/public/images/projects/project6.PNG";
+import project5 from "@/public/images/projects/project6.png";
 
 export const featuredProjects = [
     {
