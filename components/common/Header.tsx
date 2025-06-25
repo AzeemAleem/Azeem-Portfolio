@@ -178,12 +178,13 @@ const Header = () => {
                                 offset={-80}
                                 onClick={handleToggleMenu}
                             >
-                                <div className="text-LightestSlate text-[17px] flex items-center group hover:text-primary transition-all duration-150 ease-linear">
+                                {/* <div className="text-LightestSlate text-[17px] flex items-center group hover:text-primary transition-all duration-150 ease-linear">
                                     <span className="heading-num text-primary transition-all duration-150 ease-linear mr-1 text-xs">
                                         0{index + 1}.{" "}
                                     </span>
                                     {nav.title}
-                                </div>
+                                </div> */}
+                                testing
                             </Link>
                         </motion.div>
                     ))}
