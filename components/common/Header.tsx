@@ -118,12 +118,12 @@ const Header = () => {
                                 smooth={true}
                                 duration={500}
                             >
-                                <div className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear">
-                                    <span className="heading-num text-primary transition-all duration-150 ease-linear mr-1 text-xs">
-                                        0{index + 1}.{" "}
-                                    </span>
-                                    {nav.title}
-                                </div>
+                               <span className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear">
+    <span className="heading-num text-primary mr-1 text-xs">
+      0{index + 1}.
+    </span>
+    {nav.title}
+  </span>
                             </Link>
                         </motion.div>
                     ))}
