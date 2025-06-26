@@ -7,22 +7,42 @@ import { Icon } from "@iconify/react";
 
 const Experience = () => {
     const workHistory = [
+        // {
+        //     id: 1,
+        //     name: "Voltquant",
+        //     role: "Senior Software Engineer",
+        //     fromDate: "Nov 2023",
+        //     toDate: "Present",
+        //     isFullTime: true,
+        //     details: [
+        //         "Evaluated operational feasibility and proposed solutions, helping reduce estimation errors and align product direction early in the lifecycle.",
+        //         "Built large-scale geospatial data pipelines using MapLibre, Mapbox, and Google Maps APIs, improving map rendering speed by 45%.",
+        //         "Deployed secure, scalable cloud systems using AWS ((EC2, S3, SES, Amplify, RDS, Cognito, Route 53, Bedrock, etc.), improving system uptime and reducing latency by 30%.",
+        //         "Fine-tuned GPT-based LLMs via prompt engineering with OpenAI API, enhancing accuracy of responses by 35% in QA tests.",
+        //         "Integrated Stripe API into a React app, enabling secure and fast transactions, reducing payment failure rate by 40%.",
+        //         "Led and mentored a team of 5–8 engineers, improving task completion rates and team velocity through regular check-ins and support."
+        //     ],
+        // },
         {
-            id: 1,
-            name: "Voltquant",
-            role: "Senior Software Engineer",
-            fromDate: "Nov 2023",
-            toDate: "Present",
-            isFullTime: true,
-            details: [
-                "Evaluated operational feasibility and proposed solutions, helping reduce estimation errors and align product direction early in the lifecycle.",
-                "Built large-scale geospatial data pipelines using MapLibre, Mapbox, and Google Maps APIs, improving map rendering speed by 45%.",
-                "Deployed secure, scalable cloud systems using AWS ((EC2, S3, SES, Amplify, RDS, Cognito, Route 53, Bedrock, etc.), improving system uptime and reducing latency by 30%.",
-                "Fine-tuned GPT-based LLMs via prompt engineering with OpenAI API, enhancing accuracy of responses by 35% in QA tests.",
-                "Integrated Stripe API into a React app, enabling secure and fast transactions, reducing payment failure rate by 40%.",
-                "Led and mentored a team of 5–8 engineers, improving task completion rates and team velocity through regular check-ins and support."
-            ],
-        },
+    id: 1,
+    name: "Voltquant Pvt Ltd",
+    role: "Senior Software Engineer",
+    fromDate: "Nov 2023",
+    toDate: "Present",
+    isFullTime: true,
+    details: [
+        "Built large-scale geospatial data pipelines using MapLibre, Mapbox, and Google Maps APIs, improving map rendering speed by 45%.",
+        "Deployed secure, scalable cloud systems using AWS (EC2, S3, SES, Amplify, RDS, Cognito, Route 53, Bedrock, etc.), improving system uptime and reducing latency by 30%.",
+        "Integrated Stripe API into a React app, enabling secure and fast transactions, reducing payment failure rate by 40%.",
+        "Evaluated operational feasibility and proposed solutions, helping reduce estimation errors and align product direction early in the lifecycle.",
+        "Fine-tuned GPT-based LLMs via prompt engineering with OpenAI API, enhancing accuracy of responses by 35% in QA.",
+        "Led Agile Scrum ceremonies for 3 cross-functional teams (5–8 members each), delivering 12 major releases ahead of schedule with 98% sprint goal completion rate.",
+        "Scaled data processing using Azure Functions, Cosmos DB, and Blob Storage, reducing operational costs by 25% through serverless architecture and optimized indexing strategies.",
+        "Automated document workflows with Azure Indexer and Cosmos DB, improving search efficiency by 50% for enterprise-scale applications.",
+        "Developed systematic prompt testing frameworks that enhanced GPT-4 output accuracy by 55% across customer support automation workflows."
+    ]
+},
+
         {
             id: 2,
             name: "Creative Handles",
