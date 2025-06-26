@@ -112,20 +112,19 @@ const Header = () => {
                             className="cursor-pointer"
                         >     
                         <Link
-                       key={index}
-                       activeClass="active"
-                      to={nav.link}
-                   spy={true}
-             smooth={true}
+             activeClass="active"
+                   to={nav.link}
+                spy={true}
+                smooth={true}
               duration={500}
-                         className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear"
-                   >
-                        {/* <span className="heading-num text-primary mr-1 text-xs">
-                        0{index + 1}.
-                  </span>
-                   {nav.title} */}
-                   Testing
-                 </Link>
+                 className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear"
+>
+  <span className="heading-num text-primary mr-1 text-xs">
+    0{index + 1}.
+  </span>
+  {nav.title}
+</Link>
+
                             {/* <Link
                                 activeClass="active"
                                 to={nav.link}
@@ -169,23 +168,22 @@ const Header = () => {
                             key={index}
                             className="cursor-pointer"
                         >
-                            <Link
-                                activeClass="active"
-                                to={nav.link}
-                                spy={true}
-                                smooth={true}
-                                duration={500}
-                                offset={-80}
-                                onClick={handleToggleMenu}
-                            >
-                                {/* <div className="text-LightestSlate text-[17px] flex items-center group hover:text-primary transition-all duration-150 ease-linear">
-                                    <span className="heading-num text-primary transition-all duration-150 ease-linear mr-1 text-xs">
-                                        0{index + 1}.{" "}
-                                    </span>
-                                    {nav.title}
-                                </div> */}
-                                testing
-                            </Link>
+                           <Link
+  activeClass="active"
+  to={nav.link}
+  spy={true}
+  smooth={true}
+  duration={500}
+  offset={-80}
+  onClick={handleToggleMenu}
+  className="text-LightestSlate text-[17px] flex items-center group hover:text-primary transition-all duration-150 ease-linear"
+>
+  <span className="heading-num text-primary transition-all duration-150 ease-linear mr-1 text-xs">
+    0{index + 1}.
+  </span>
+  {nav.title}
+</Link>
+
                         </motion.div>
                     ))}
                     <motion.div

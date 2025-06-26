@@ -45,23 +45,23 @@ const Home = () => {
             businesses launch faster and grow with confidence.
           </motion.p>
           <Link
-            activeClass="active"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            {/* <span>
-              <motion.div
-                initial={{ y: 28, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.3, delay: 2.6 }}
-              >
-                <Button text="Contact Me" link="/" />
-              </motion.div>
-            </span> */}
-            Testing
-          </Link>
+  activeClass="active"
+  to="contact"
+  spy={true}
+  smooth={true}
+  duration={500}
+>
+  <span className="inline-block">
+    <motion.div
+      initial={{ y: 28, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3, delay: 2.6 }}
+    >
+      <Button text="Contact Me" link="/" />
+    </motion.div>
+  </span>
+</Link>
+
         </div>
       </Container>
     </section>
