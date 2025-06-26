@@ -44,23 +44,25 @@ const Home = () => {
             platforms. My goal is to deliver clean, maintainable code that helps
             businesses launch faster and grow with confidence.
           </motion.p>
-          <Link
-  activeClass="active"
-  to="contact"
-  spy={true}
-  smooth={true}
-  duration={500}
+         <span
+  className="inline-block cursor-pointer"
+  onClick={(e) => {
+    e.preventDefault();
+    const section = document.getElementById("contact");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
 >
-  <span className="inline-block">
-    <motion.div
-      initial={{ y: 28, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.3, delay: 2.6 }}
-    >
-      <Button text="Contact Me" link="/" />
-    </motion.div>
-  </span>
-</Link>
+  <motion.div
+    initial={{ y: 28, opacity: 0 }}
+    animate={{ y: 0, opacity: 1 }}
+    transition={{ duration: 0.3, delay: 2.6 }}
+  >
+    <Button text="Contact Me" link="/" />
+  </motion.div>
+</span>
+
 
         </div>
       </Container>

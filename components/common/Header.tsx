@@ -111,19 +111,22 @@ const Header = () => {
                             key={index}
                             className="cursor-pointer"
                         >     
-                        <Link
-             activeClass="active"
-                   to={nav.link}
-                spy={true}
-                smooth={true}
-              duration={500}
-                 className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear"
+                     <span
+  className="text-LightestSlate text-[13px] flex items-center group hover:text-primary transition-all duration-150 ease-linear cursor-pointer"
+  onClick={(e) => {
+    e.preventDefault();
+    const section = document.getElementById(nav.link);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
 >
   <span className="heading-num text-primary mr-1 text-xs">
     0{index + 1}.
   </span>
   {nav.title}
-</Link>
+</span>
+
 
                             {/* <Link
                                 activeClass="active"
@@ -168,21 +171,23 @@ const Header = () => {
                             key={index}
                             className="cursor-pointer"
                         >
-                           <Link
-  activeClass="active"
-  to={nav.link}
-  spy={true}
-  smooth={true}
-  duration={500}
-  offset={-80}
-  onClick={handleToggleMenu}
-  className="text-LightestSlate text-[17px] flex items-center group hover:text-primary transition-all duration-150 ease-linear"
+                         <span
+  className="text-LightestSlate text-[17px] flex items-center group hover:text-primary transition-all duration-150 ease-linear cursor-pointer"
+  onClick={(e) => {
+    e.preventDefault();
+    const section = document.getElementById(nav.link);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      handleToggleMenu();
+    }
+  }}
 >
   <span className="heading-num text-primary transition-all duration-150 ease-linear mr-1 text-xs">
     0{index + 1}.
   </span>
   {nav.title}
-</Link>
+</span>
+
 
                         </motion.div>
                     ))}
